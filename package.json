@@ -1,9 +1,9 @@
 {
   "name": "angular-draggable-component",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Angular draggable and resizable component",
-  "main": "lib/main.ts",
-  "types": "./lib/main.d.ts",
+  "main": "dist/components/card/card.module.js",
+  "types": "dist/components/card/card.module.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
