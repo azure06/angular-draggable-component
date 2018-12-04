@@ -1,0 +1,34 @@
+{
+  "name": "angular-draggable-component",
+  "version": "1.0.0",
+  "description": "Angular draggable and resizable component",
+  "main": "lib/main.ts",
+  "types": "./lib/main.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azure06/angular-draggable-component.git"
+  },
+  "keywords": [
+    "angular",
+    "resizable",
+    "draggable",
+    "component"
+  ],
+  "author": "Gabriele Sato (https://github.com/azure06)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azure06/angular-draggable-component/issues"
+  },
+  "homepage": "https://github.com/azure06/angular-draggable-component#readme",
+  "dependencies": {
+    "@angular/core": "~7.0.0",
+    "rxjs": "~6.3.3"
+  },
+  "devDependencies": {
+    "typescript": "~3.1.6"
+  }
+}
