@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss'],
+  selector: 'ard-card',
+  template: `
+    <div class="card"><ng-content> </ng-content></div>
+  `,
 })
 export class CardComponent {}

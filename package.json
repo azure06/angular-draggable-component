@@ -1,6 +1,6 @@
 {
   "name": "angular-draggable-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular draggable and resizable component",
   "main": "dist/components/card/card.module.js",
   "types": "dist/components/card/card.module.d.ts",

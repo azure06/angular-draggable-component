@@ -12,7 +12,7 @@ Installation
 To use with node:
 
 ```console
-npm install ionic4-reactive-textarea
+npm install angular-draggable-component
 ```
 
 

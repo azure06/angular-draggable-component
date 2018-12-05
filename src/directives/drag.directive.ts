@@ -1,10 +1,4 @@
-import {
-  ElementRef,
-  Directive,
-  OnInit,
-  OnDestroy,
-  Renderer2,
-} from '@angular/core';
+import { ElementRef, Directive, OnInit, OnDestroy } from '@angular/core';
 import { Subscription, fromEvent } from 'rxjs';
 
 enum MouseStatus {
@@ -24,7 +18,7 @@ export class DragDirective implements OnInit, OnDestroy {
   mouseUpSubscription: Subscription;
   mouseMoveSubscription: Subscription;
 
-  constructor(public element: ElementRef, private renderer: Renderer2) {}
+  constructor(public element: ElementRef) {}
 
   ngOnInit(): void {
     const mouseUpObservable = fromEvent(document, 'mouseup');
@@ -54,23 +48,20 @@ export class DragDirective implements OnInit, OnDestroy {
       this.clientX = event.clientX;
       this.clientY = event.clientY;
     };
-    this.renderer.addClass(innerEl, 'wrapper');
-    this.renderer.addClass(el, 'content');
 
-    // Object.assign(wrapper.style, {
-    //   backgroundColor: 'rgba(240, 240, 240, 1)',
-    //   width: 'calc(100% - 10px)',
-    //   height: 'calc(100% - 10px)',
-    //   margin: '5px',
-    // });
-    // Object.assign(el.style, {
-    //   position: 'absolute',
-    //   overflow: 'auto',
-    //   top: '0px',
-    //   left: '0px',
-    //   boxShadow: '0px 0px 10px 2px rgba(89, 89, 89, .5)',
-    //   borderRadius: '3px',
-    // });
+    Object.assign(innerEl.style, {
+      width: 'calc(100% - 10px)',
+      height: 'calc(100% - 10px)',
+      margin: '5px',
+    });
+    Object.assign(el.style, {
+      position: 'absolute',
+      overflow: 'auto',
+      top: '0px',
+      left: '0px',
+      boxShadow: '0px 0px 10px 2px rgba(89, 89, 89, .25)',
+      borderRadius: '3px',
+    });
   }
 
   move({ x, y }: { x: number; y: number }) {
