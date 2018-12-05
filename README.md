@@ -18,7 +18,7 @@ npm install angular-draggable-component
 
 Usage
 -----------------
-import in .module.ts file
+import in typescript `module`
 
 ```typescript
 import { CardModule } from 'angular-draggable-component';
@@ -32,7 +32,7 @@ import { CardModule } from 'angular-draggable-component';
 export class AppModule {}
 ```
 
-and then in html template
+and then in `html` template
 
 ```html
 <div style="display: relative; height: 1200px;">
