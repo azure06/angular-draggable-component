@@ -18,7 +18,7 @@ npm install angular-draggable-component
 
 Usage
 -----------------
-import in typescript `module`
+Import in typescript `module`
 
 ```typescript
 import { CardModule } from 'angular-draggable-component';
