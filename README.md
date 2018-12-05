@@ -4,7 +4,7 @@ Angular draggable and resizable component
 
 angular-draggable-resizable is an Angular resizable and draggable component.
 
-![alt text](assets/angular-draggable-component.gif "Draggable component")
+![alt text](src/assets/angular-draggable-component.gif "Draggable component")
 
 Installation
 -----------------
